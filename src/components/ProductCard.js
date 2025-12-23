@@ -1,30 +1,6 @@
 import "./ProductCard.scss";
 import { useNavigate } from "react-router-dom";
-
-// 크롬 사진
-import chromeFront from "../assets/img/CHROME_HAVEN_front.png";
-import chrome02 from "../assets/img/CHROME_HAVEN_02.png";
-// 벨로라 사진
-import VeloraFront from "../assets/img/Velora_front.png";
-import Velora02 from "../assets/img/Velora_01.png";
-// 레트로 사진
-import RetroFront from "../assets/img/RETRO_CURRENT_front.png";
-import Retro02 from "../assets/img/RETRO_CURRENT_03.png";
-// 베일 사진
-import VeilFront from "../assets/img/Veil_front.png";
-import Veil02 from "../assets/img/Veil_02.png";
-// 미드나잇 사진
-import MidFront from "../assets/img/Midnight_front.png";
-import Mid02 from "../assets/img/Midnight_05.png";
-// 모스 사진
-import MossFront from "../assets/img/Moss_front.png";
-import Moss02 from "../assets/img/Moss_03.png";
-// 스틸 사진
-import StillFront from "../assets/img/Still_front.png";
-import Still02 from "../assets/img/Still_02.png";
-// 클라우드 사진
-import CloudFront from "../assets/img/Cloud_front.png";
-import Cloud02 from "../assets/img/Cloud_04.png";
+import products from "../assets/data/products.json";
 
 
 
