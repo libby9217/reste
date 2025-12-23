@@ -2,13 +2,16 @@
 @use "../../assets/scss/mixins" as *;
 
 #header {
-  height: 82px;
-  @include flex-layout();
+  width: 100%;
+  height: 150px;
+  @include flex-layout(column);
+  .icon {
+    display: block;
+  }
   nav {
     width: 650px;
     height: 50px;
     border-radius: 25px;
-    background-color: var(--color-100);
     background: rgba( 255, 255, 255, 0.2 );
     backdrop-filter: blur( 3px );
     border: 1px solid rgba( 255, 255, 255, 0.2 );
@@ -67,6 +70,15 @@
           transition: 0.3s;
         }
       }
+    }
+  }
+  .icon-drop {
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: 0.3s;
+    svg {
+      font-size: 1.8rem;
+      color: var(--color-sub-BR);
     }
   }
 }
