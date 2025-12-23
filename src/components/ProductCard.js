@@ -1,4 +1,5 @@
 import "./ProductCard.scss";
+import { useNavigate } from "react-router-dom";
 
 // 크롬 사진
 import chromeFront from "../assets/img/CHROME_HAVEN_front.png";
@@ -28,9 +29,13 @@ import Cloud02 from "../assets/img/Cloud_04.png";
 
 
 const ProductCard = () => {
+    const navigate = useNavigate();
+    const handleDetail = ()=>{
+        navigate(`/detail:id`);
+    }
     return (
-        <section className="product">
-          <div className="product-card">
+        <section className="product" onClick={handleDetail}>
+           <div className="product-card">
             {/* 크롬 */}
               <div className="inner-card">
                   <div className="card">
