@@ -5,10 +5,12 @@ import ProductPage from "./pages/ProductPage"
 import CartPage from "./pages/CartPage"
 import DetailPage from "./pages/DetailPage"
 import "../src/assets/scss/global.scss"
+import ScrollToTop from "./components/ScrollToTop";
 
 const App = () => {
   return (
     <BrowserRouter>
+    <ScrollToTop />
       <Routes>
         <Route element={<Layout />}>
           <Route path="/" element={<MainPage />} />
