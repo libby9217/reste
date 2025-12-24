@@ -48,20 +48,7 @@ const BestItem = () => {
 
   return (
     <section className="best-item">
-      <div className="banner">
-        {/* 상단 그라데이션 오버레이 */}
-        <div className="banner_gradient" />
-
-        <div className="banner_viewport">
-          <ul className="banner_track" ref={trackRef}>
-            {slides.map((src, idx) => (
-              <li className="banner_slide" key={idx}>
-                <img src={src} alt={`best item ${idx + 1}`} />
-              </li>
-            ))}
-          </ul>
-        </div>
-      </div>
+      BestItem
     </section>
   )
 }
