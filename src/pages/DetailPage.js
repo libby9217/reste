@@ -18,6 +18,7 @@ const DETAIL_LAYOUT_MAP = {
 };
 
 const DetailPage = () => {
+  
     const { id } = useParams();
 
     // 1차 방어
@@ -25,10 +26,11 @@ const DetailPage = () => {
 
     const safeId = id.toLowerCase();
 
-    // 
     const product = products.find(
-        (item) => item.id && item.id.toLowerCase() === safeId
+      (item) => item.id.toLowerCase() === safeId
+      
     );
+    
 
     if (!product) return <div>{safeId} 페이지 없음</div>;
 
